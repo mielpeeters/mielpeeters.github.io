@@ -25,7 +25,7 @@ body {
     radial-gradient(circle, rgb(255, 88, 88) 0%, rgba(244, 158, 45, 0.991) 20%, rgba(0,0,0,0.8) 60%),
     url(img/grain.svg);
 
-  filter: contrast(140%) brightness(160%);  
+  filter: contrast(140%) brightness(120%) saturate(150%);  
 
 
   animation: moveRound 20s ease-in-out 0s infinite alternate;
@@ -44,7 +44,7 @@ body {
     radial-gradient(circle, rgb(91, 206, 251) 0%, rgb(24, 78, 112) 30%, rgba(0,0,0,0.8) 60%),
     url(img/grain.svg);
 
-  filter: contrast(180%) brightness(150%) saturate(150%);  
+  filter: contrast(180%) brightness(120%) saturate(150%);  
 
   transform-origin: 60% 65%;
 
@@ -65,7 +65,7 @@ body {
     radial-gradient(circle, rgb(135, 255, 135) 0%, rgb(108, 132, 10) 30%, rgba(0,0,0,0.8) 70%),
     url(img/grain.svg);
 
-  filter: contrast(180%) brightness(150%) saturate(150%);  
+  filter: contrast(180%) brightness(120%) saturate(150%);  
 
   transform-origin: 40% 65%;
 
@@ -85,17 +85,17 @@ body {
 
 .miel {
   font-family: 'Fira Code', monospace;
-  color: rgb(158, 158, 158);
+  color: rgb(86, 86, 86);
 
   width: 320px;
   padding: 12px;
 
   border-width: 5px;
   border-style: solid;
-  border-color: rgba(26, 26, 26, 0.441);
+  border-color: rgba(32, 32, 32, 0.441);
 
   /* mix-blend-mode:difference; */
-  mix-blend-mode:color-dodge;
+  mix-blend-mode: difference;
 
   border-radius: 20px;
 
@@ -144,7 +144,7 @@ body {
 }
 
 .miel a {
-  color: rgb(158, 158, 158);
+  color: rgb(86, 86, 86);
 }
 
 @keyframes moveRound{
