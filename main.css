@@ -1,23 +1,32 @@
 body {
   background-color: black;
+}
 
+.noises {
+  position:absolute;
+
+  width: 500px;
+  height: 500px;
+
+  transform: translate(-10%);
 }
 
 .noise_1 {
   position: absolute;
-  top: 5vw;
-  left: 30%;
+  transform-origin: 60% 65%;
+  
   width: 500px;
   height: 500px;
 
+
+
   /* ... */
   background:
-    radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(185, 108, 7, 0.991) 20%, rgba(0,0,0,0.8) 60%),
+    radial-gradient(circle, rgb(255, 88, 88) 0%, rgba(244, 158, 45, 0.991) 20%, rgba(0,0,0,0.8) 60%),
     url(img/grain.svg);
 
   filter: contrast(140%) brightness(160%);  
 
-  transform-origin: 60% 65%;
 
   animation: moveRound 20s ease-in-out 0s infinite alternate;
 
@@ -29,12 +38,10 @@ body {
   position: absolute;
   width: 550px;
   height: 550px;
-  left: 20%;
-  top: 5%;
 
   /* ... */
   background:
-    radial-gradient(circle, rgb(121, 214, 250) 0%, rgb(8, 83, 129) 30%, rgba(0,0,0,0.8) 60%),
+    radial-gradient(circle, rgb(91, 206, 251) 0%, rgb(24, 78, 112) 30%, rgba(0,0,0,0.8) 60%),
     url(img/grain.svg);
 
   filter: contrast(180%) brightness(150%) saturate(150%);  
@@ -50,12 +57,12 @@ body {
   position: absolute;
   width: 350px;
   height: 350px;
-  left: 35%;
-  top: 10%;
+
+
 
   /* ... */
   background:
-    radial-gradient(circle, rgb(135, 255, 135) 0%, rgb(87, 108, 11) 30%, rgba(0,0,0,0.8) 60%),
+    radial-gradient(circle, rgb(135, 255, 135) 0%, rgb(108, 132, 10) 30%, rgba(0,0,0,0.8) 70%),
     url(img/grain.svg);
 
   filter: contrast(180%) brightness(150%) saturate(150%);  
@@ -77,29 +84,67 @@ body {
 }
 
 .miel {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Fira Code', monospace;
   color: rgb(158, 158, 158);
 
-  width: 300px;
-  height: 100px;
+  width: 320px;
+  padding: 12px;
 
-  mix-blend-mode:darken;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(26, 26, 26, 0.441);
+
+  /* mix-blend-mode:difference; */
+  mix-blend-mode:color-dodge;
 
   border-radius: 20px;
 
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  flex-direction: column;
 
     
-  background: url(img/slightGrain.svg);
+  /* background: url(img/slightGrain.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 
   /* background-clip: text; */
   /* -webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
   backdrop-filter: blur(30px);
+}
+
+.miel .know {
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+}
+
+.miel .explain {
+  flex: 1;
+}
+
+.miel .lst {
+  flex: 2;
+}
+
+.miel ul {
+  padding-left: 23px;
+  margin-top: 0px;
+  list-style-type: none;
+}
+
+.miel h1 {
+  align-self: center;
+  font-weight: 900;
+}
+
+.miel a {
+  color: rgb(158, 158, 158);
 }
 
 @keyframes moveRound{
