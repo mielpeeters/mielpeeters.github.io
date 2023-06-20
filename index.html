@@ -4,8 +4,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Know People</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="noise_1"></div>
+        <div class="noise_2"></div>
+        <div class="noise_3"></div>
+        <h1 class="miel">Miel Peeters</h1>
+    </div>
+    <script type="text/turtle">  
+        @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+        <#me> a foaf:Person .
+        <#me> foaf:name 'Miel Peeters' .
+        <#me> foaf:dateofbirth '2002' .
+        <https://pietercolpaert.be/#me> a foaf:Person .
+        <https://sven-lieber.org/#me> a foaf:Person .
+        <#me> foaf:knows <https://pietercolpaert.be/#me> .
+        <#me> foaf:knows <https://sven-lieber.org/#me> .
+    </script>
 </body>
 </html>
