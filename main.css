@@ -1,11 +1,12 @@
 body {
   background-color: black;
+
 }
 
 .noise_1 {
   position: absolute;
-  top: 0px;
-  left: 100px;
+  top: 5vw;
+  left: 30%;
   width: 500px;
   height: 500px;
 
@@ -20,7 +21,7 @@ body {
 
   animation: moveRound 20s ease-in-out 0s infinite alternate;
 
-  mix-blend-mode:lighten;
+  mix-blend-mode:screen;
 
 }
 
@@ -28,8 +29,8 @@ body {
   position: absolute;
   width: 550px;
   height: 550px;
-  left: 250px;
-  top: 100px;
+  left: 20%;
+  top: 5%;
 
   /* ... */
   background:
@@ -40,7 +41,7 @@ body {
 
   transform-origin: 60% 65%;
 
-  animation: moveRound 15s ease-in-out 2s infinite alternate;
+  animation: moveRound 15s ease-in-out 1s infinite alternate;
 
   mix-blend-mode:screen;
 }
@@ -49,12 +50,12 @@ body {
   position: absolute;
   width: 350px;
   height: 350px;
-  left: 250px;
-  top: 150px;
+  left: 35%;
+  top: 10%;
 
   /* ... */
   background:
-    radial-gradient(circle, rgb(102, 250, 102) 0%, rgb(87, 108, 11) 30%, rgba(0,0,0,0.8) 60%),
+    radial-gradient(circle, rgb(135, 255, 135) 0%, rgb(87, 108, 11) 30%, rgba(0,0,0,0.8) 60%),
     url(img/grain.svg);
 
   filter: contrast(180%) brightness(150%) saturate(150%);  
@@ -72,6 +73,7 @@ body {
   align-items: center;
   align-content: center;
   height: 700px;
+  width: 100%;
 }
 
 .miel {
