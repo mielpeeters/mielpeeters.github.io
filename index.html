@@ -8,6 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <script type="text/turtle" src="src/rdf.ttl"></script>
+    <script type="text/turtle">
+        @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+        <#me> a foaf:Person .
+        <#me> foaf:name 'Miel Peeters' .
+        <#me> foaf:dateofbirth '2002' .
+
+        <#me> foaf:knows    <https://pietercolpaert.be/#me> ,
+                            <https://sven-lieber.org/#me> ,
+                            <https://stijnoosterlinck.github.io/#me> ,
+                            <https://kilicode.github.io/BP-BDS/> .
+    </script>
 </head>
 <body>
     <div class="container">
@@ -27,15 +40,6 @@
             </div>
         </div>
     </div>
-    <script type="text/turtle">  
-        @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-        <#me> a foaf:Person .
-        <#me> foaf:name 'Miel Peeters' .
-        <#me> foaf:dateofbirth '2002' .
-        <https://pietercolpaert.be/#me> a foaf:Person .
-        <https://sven-lieber.org/#me> a foaf:Person .
-        <#me> foaf:knows <https://pietercolpaert.be/#me> .
-        <#me> foaf:knows <https://sven-lieber.org/#me> .
-    </script>
+    
 </body>
 </html>

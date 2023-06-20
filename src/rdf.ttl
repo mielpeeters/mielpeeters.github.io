@@ -1,0 +1,10 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<#me> a foaf:Person .
+<#me> foaf:name 'Miel Peeters' .
+<#me> foaf:dateofbirth '2002' .
+
+<#me> foaf:knows    <https://pietercolpaert.be/#me> ,
+                    <https://sven-lieber.org/#me> ,
+                    <https://stijnoosterlinck.github.io/#me> ,
+                    <https://kilicode.github.io/BP-BDS/> .
