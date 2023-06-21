@@ -23,6 +23,13 @@
     </script>
 </head>
 <body>
+    <div id="cursor">
+        <svg viewBox="-110 -110 220 220" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <ellipse ry="90" rx="90" id="eyeLid" cy="0" cx="0" stroke="#000" fill="#ffffff" stroke-width="20" />
+            <ellipse ry="40" rx="40" id="eyeBall" cy="0" cx="30" stroke="#000" fill="#000000" />
+        </svg>
+    </div>
+
     <div class="container">
         <div class="noises">
             <div class="noise_1"></div>
@@ -30,16 +37,23 @@
             <div class="noise_3"></div>
         </div>
         <div class="miel">
-            <h1>&ltmiel peeters&gt</h1>
+            <h1>
+                <a href="http://github.com/mielpeeters">
+                    <span class="look">
+                        &ltmiel peeters&gt
+                    </span>
+                </a>
+            </h1>
             <div class="know">
                 <div class="explain">foaf:knows</div>
                 <ul class="lst"">
-                    <li><a href="https://pietercolpaert.be/#me">&ltpieter colpaert&gt ;</a></li>
-                    <li><a href="https://sven-lieber.org/en/">&ltsven lieber&gt .</a></li>
+                    <li><a href="https://pietercolpaert.be/#me" class="look">&ltpieter colpaert&gt ;</a></li>
+                    <li><a href="https://sven-lieber.org/en/" class="look">&ltsven lieber&gt .</a></li>
                 </ul>
             </div>
         </div>
     </div>
     
+    <script src="src/eyeCursor.js"></script>
 </body>
 </html>

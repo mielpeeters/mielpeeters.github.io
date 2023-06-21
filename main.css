@@ -1,3 +1,29 @@
+* {
+  cursor: none;
+}
+
+#cursor {
+  position: fixed;
+  left: -0.45rem;
+  top: -0.45rem;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 5;
+  transition: none;
+}
+#cursor svg {
+  display: block;
+  will-change: transform;
+  transition: transform 0.3s cubic-bezier(0.3, 1.46, 0.53, 0.92);
+  opacity: 0;
+  width: 0.9rem;
+  height: 0.9rem;
+  z-index: 5;
+}
+#cursor svg ellipse {
+  transition: all 0.2s cubic-bezier(0.16, 0.6, 0.81, 0.99);
+}/*# sourceMappingURL=main.css.map */
+
 body {
   background-color: black;
 }
@@ -145,6 +171,7 @@ body {
 
 .miel a {
   color: rgb(86, 86, 86);
+  text-decoration: none;
 }
 
 @keyframes moveRound{
